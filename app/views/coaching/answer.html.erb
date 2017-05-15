@@ -1,0 +1,23 @@
+<div class="text-center padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3 qa">
+        <h3><%= params[:query] %></h3>
+        <p class="author">- You</p>
+
+      </div>
+    </div>
+    <div class="row padded">
+      <div class="col-xs-6 col-xs-offset-3 qa">
+        <h3>result: <%= @answer %></h3>
+        <p class="author">- Your Coach</p>
+
+      </div>
+    </div>
+    <div class="row padded">
+      <div class="col-xs-6 col-xs-offset-3">
+        <%= link_to "Ask a new question", ask_path %>
+      </div>
+    </div>
+  </div>
+</div>

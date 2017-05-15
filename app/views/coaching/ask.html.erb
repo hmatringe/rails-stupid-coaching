@@ -1,0 +1,17 @@
+<div class="text-center padded">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <h3>Your message to the coach?</h3>
+        <form action="/answer">
+          <div class="form-group">
+            <label >Question</label>
+            <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+            <input type="text" class="form-control" name="query" placeholder="Type your question here...">
+          </div>
+          <button type="submit" class="btn btn-primary">Ask</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
